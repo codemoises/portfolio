@@ -21,6 +21,10 @@
     position: fixed;
     width: 100%;
     padding: 30px 0;
+    background-color: #0E091B;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(114, 114, 126, 0.2);
     /*background-color: #1e1d27;*/
     /*box-shadow: 0px 0px 3px rgb(31, 31, 31);*/
 }
@@ -37,25 +41,23 @@
     justify-content: space-between;
 }
 
-.navbar .logo a {
+.navbar .logo input {
     color: #FEFBFB;
-    font-size: 30px;
+    font-size: 18px;
     font-weight: 500;
-    background: linear-gradient(225deg, rgb(81, 28, 167) 0%, rgba(94, 15, 221, 0.226) 100%);
-    padding: 0px 15px;
-    border-radius: 3px;
+    background: linear-gradient(225deg, rgb(102, 16, 242, 0.3) 0%, rgba(102, 16, 242, 0) 100%);
+    padding: 15px 30px;
+    border-radius: 4px;
     border: 1px solid;
-    border-image: linear-gradient(225deg, #6610f2 0%, rgba(102, 16, 242, 0) 100%) 1;
-    transition: all 0.50s ease;
-    text-decoration: none;
-
+    border-image: linear-gradient(225deg, #6610f2 0%, rgba(103, 16, 242, 0.185) 100%) 1;
+    transition: all 0.7s ease 0s, opacity 2s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 2s cubic-bezier(0.5, 0, 0, 1) 0.2s;
 }
 
-.navbar .logo a:hover {
-    font-size: 30px;
+.navbar .logo input:hover {
+    font-size: 18px;
     font-weight: 500;
-    background: linear-gradient(225deg, rgb(107, 37, 219) 0%, rgba(94, 15, 221, 0.226) 100%);
-    padding: 0px 25px;
+    background: linear-gradient(225deg, rgba(103, 16, 242, 0.486) 0%, rgba(103, 16, 242, 0.062) 100%);
+    padding: 15px 40px;
     border-radius: 3px;
 }
 
@@ -96,7 +98,7 @@
 
 .inicio {
     display: flex;
-    background-color: #131219;
+    background-color: #0E091B;
     height: 100vh;
     color: #FEFBFB;
     min-height: 500px;
@@ -122,20 +124,13 @@
 
 .inicio .home-content .text-3 span {
     color: rgb(81, 28, 167);
-    font-size: 35px;
-    transition: all 0.40s ease;
 }
 
-.inicio .home-content .text-3 span:hover {
-    /*color: rgb(112, 43, 224);*/
-    padding-left: 10px;
-    font-size: 35px;
-    text-shadow: 1px 1px 1px rgb(81, 28, 167), -1px 1px 1px rgb(81, 28, 167), 1px -1px 1px rgb(81, 28, 167), -1px -1px 1px rgb(81, 28, 167);
-}
+
 
 /* RESPONSIVE MEDIA QUERRY START*/
 
-@media (max-width: 947px) {
+@media (max-width: 1084px) {
 
     .max-width {
         padding: 0 50px;
