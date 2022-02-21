@@ -2,17 +2,154 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@200;500&display=swap');
 
+:root {
+    /*CORES*/
+    /*BACKGROUND*/
+    --primary-color: #06040c;
+
+    /*WHITE*/
+    --white: #ffffff;
+    --secondary-white: #c9c9c9;
+    --third-white: #eeeeee;
+    
+    /*PURPLE*/
+    --primary-purple: #7343CC;
+    --secondary-purple: #653BB3;
+    --third-purple: #4F2E8C;
+
+    /*TAMANHOS*/
+    --gap: 3rem;
+}
+
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: 0px;
+    box-sizing: border-box;
 }
 
-.max-width {
-    max-width: 1300px;
-    padding: 0 268px;
-    margin: auto;
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
 }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    color: var(--white);
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+h2 {
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 5rem;
+}
+
+h4 {
+    font-size: 4.5rem;
+}
+
+h5 {
+    font-size: 4rem;
+}
+
+h6 {
+    font-size: 3.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 10rem var(--gap);
+}
+
+.menu {
+    background: var(--primary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 0.1rem solid #353a41;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu h1 {
+    font-size: 2.3rem;
+    color: var(--secondary-white);
+}
+
+.menu h1 a {
+    color: inherit;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+
+}
+
+.menu ul a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: var(--secondary-white);
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    text-underline-offset: 6px;
+}
+
+.menu ul a:hover {
+    color: #FEFBFB;
+    text-decoration: underline rgb(99, 45, 187);
+    text-decoration-thickness: 3px;
+}
+
+.menu-spacing {
+    height: 65px;
+}
+
+.inicio-content {
+    position: relative;
+    /*top: -8rem;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap);
+    min-height: 100vh;
+}
+
+.inicio-text-content, .inicio-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.inicio-img img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 /* NAVBAR STYLING*/
 
