@@ -145,7 +145,7 @@ a {
     min-height: 100vh;
 }
 
-.inicio .home-content .text-1, .text-3, .text-4 {
+.inicio .home-content .text-1, .text-3, .text-4, .text-5 {
     font-family: 'Saira', sans-serif;
     color: var(--secondary-white);
     font-size: 2rem;
@@ -170,24 +170,13 @@ a {
 }
 
 .inicio .home-content .text-5 {
-    font-family: 'Saira', sans-serif;
-    font-size: 2rem;
-    text-transform: uppercase;
     padding-bottom: 0.8rem;
 }
 
 .inicio .home-content .text-6 {
     font-size: 2.4rem;
-    display: flex;
-    align-items: center;
 }
 
-.inicio .home-content .text-6 img {
-    margin-left: 1.8rem;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
 
 .inicio .home-content .padding-1 {
     padding-left: 2rem;
