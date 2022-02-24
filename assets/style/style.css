@@ -6,6 +6,8 @@
     /*CORES*/
     /*BACKGROUND*/
     --primary-color: #06040c;
+    /*BACKGROUND MENU*/
+    --secondary-color: #0e091bcc;
 
     /*WHITE*/
     --white: #ffffff;
@@ -78,18 +80,16 @@ a {
 }
 
 .menu {
-    background: rgba(14, 9, 27, 0.8);
+    background: var(--secondary-color);
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
     border-bottom: 1px solid rgba(114, 114, 126, 0.2);
-    /*background: var(--primary-color);*/
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
     z-index: 1;
-    /*border-bottom: 0.1rem solid #353a41;*/
 }
 
 .menu-content {
@@ -103,6 +103,7 @@ a {
 .menu h1 {
     font-size: 2.3rem;
     color: var(--secondary-white);
+    
 }
 
 .menu h1 a {
@@ -112,7 +113,6 @@ a {
 .menu ul {
     list-style: none;
     display: flex;
-
 }
 
 .menu ul a {
