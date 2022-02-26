@@ -288,9 +288,25 @@ a {
     left: 7.4rem;
 }
 
-/*@media (max-width: 800px) {
-    .inicio-content, .grid {
-        grid-template-columns: 1fr;
+@media (max-width: 1200px) {
+    .section {
+        flex-direction: column;
+        height: auto;
+        padding: 155px 8px 32px 8px;
+    }
+
+    .grid-2 {
+        width: calc(100% - 8px);
+        float: none;
+    }
+
+    .social {
+        left: 16px;
+    }
+
+    .inicio .grid-1 {
+        width: calc(100% - 8px);
+        float: none;
     }
 
     .main-content {
@@ -344,4 +360,4 @@ a {
 
     }
 
-}*/
+}
