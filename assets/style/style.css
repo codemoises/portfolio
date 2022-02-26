@@ -80,10 +80,12 @@ a {
 }
 
 .menu {
-    background: var(--secondary-color);
+    /*background: var(--secondary-color);
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
-    border-bottom: 1px solid rgba(114, 114, 126, 0.2);
+    border-bottom: 1px solid rgba(114, 114, 126, 0.2);*/
+    background: -webkit-gradient(linear, left top, left bottom, from(#050607), to(rgba(5, 6, 7, 0))), -webkit-gradient(linear, left top, left bottom, from(#050607), to(rgba(5, 6, 7, 0))), -webkit-gradient(linear, left top, left bottom, from(#050607), to(rgba(5, 6, 7, 0)));
+    background: linear-gradient(180deg, #050607 0%, rgba(5, 6, 7, 0) 100%), linear-gradient(180deg, #050607 0%, rgba(5, 6, 7, 0) 100%), linear-gradient(180deg, #050607 0%, rgba(5, 6, 7, 0) 100%);
     position: fixed;
     top: 0;
     left: 0;
@@ -96,12 +98,13 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 0;
+    padding-top: 0.6rem;
     padding-bottom: 0;
 }
 
-.menu h1 {
-    font-size: 2.3rem;
+.menu img {
+    width: 80px;
+    height: 80px;
     color: var(--secondary-white);
     
 }
@@ -136,6 +139,10 @@ a {
     height: 65px;
 }
 
+.inicio .inicio-text-content .p-2 {
+    padding-top: 2.5rem;
+}
+
 .inicio-content {
     position: relative;
     /*top: -8rem;*/
@@ -153,6 +160,38 @@ a {
     text-transform: uppercase;
 }
 
+.inicio .home-content .text-1 {
+    transition: all 0.5s ease;
+}
+
+.inicio .home-content .text-1:hover {
+    transform: translate(1rem, 0);
+}
+
+.inicio .home-content .text-3 {
+    transition: all 0.5s ease;
+}
+
+.inicio .home-content .text-3:hover {
+    transform: translate(1rem, 0);
+}
+
+.inicio .home-content .text-4 {
+    transition: all 0.5s ease;
+}
+
+.inicio .home-content .text-4:hover {
+    transform: translate(1rem, 0);
+}
+
+.inicio .home-content .text-5 {
+    transition: all 0.5s ease;
+}
+
+.inicio .home-content .text-5:hover {
+    transform: translate(1rem, 0);
+}
+
 .inicio .home-content .text-2 {
     font-family: 'Saira', sans-serif;
     font-size: 112px;
@@ -162,8 +201,8 @@ a {
 
 .inicio .home-content .text-3 {
     font-family: 'Saira', sans-serif;
-    font-size: 2rem;
     text-transform: uppercase;
+    font-size: 2.3rem;
     padding-left: 5rem;
     padding-top: 1.2rem;
 }
@@ -193,6 +232,15 @@ a {
     align-items: center;
 }
 
+.inicio .check-in img {
+    transition: all 0.5s ease;
+
+}
+
+.inicio .check-in img:hover {
+    transform: translate(0, -1rem);
+}
+
 .inicio .padding-1 {
     padding-left: 2rem;
 }
@@ -209,9 +257,16 @@ a {
     height: 21rem;
 }
 
-.inicio .home-content .icon-social {
+.inicio .social .icon-social {
     max-width: 3.6rem;
+    transition: all 0.5s ease;
 }
+
+.inicio .social .icon-social:hover {
+    transform: translate(0, -1rem);
+}
+
+
 
 .mx-1 {
     margin-left: 8px;
@@ -229,5 +284,60 @@ a {
     left: 6.4rem;
 }
 
+@media (max-width: 800px) {
+    .inicio-content, .grid {
+        grid-template-columns: 1fr;
+    }
 
-/*105x28*/
+    .main-content {
+        height: auto;
+        padding: 144px 8px 32px 8px;
+    }
+
+    .menu ul {
+        display: none;
+    }
+
+    .menu-content {
+        display: flex;
+        bottom: 0;
+        justify-content: center;
+        padding: 18px 18px;
+        flex-direction: column;
+    }
+
+    .inicio .home-content .text-1, .text-3, .text-4, .text-5 {
+        font-family: 'Saira', sans-serif;
+        color: var(--secondary-white);
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .inicio .home-content .text-2 {
+        font-family: 'Saira', sans-serif;
+        font-size: 46px;
+        line-height: 120%;
+        font-weight: 400;
+    }
+
+    .inicio .home-content .text-3 {
+        font-family: 'Saira', sans-serif;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        padding-left: 5rem;
+        padding-top: 1.2rem;
+    }
+
+    .inicio .home-content .text-4 {
+        margin-top: 2.0rem;
+    }
+
+
+    .inicio .inicio-text-content {
+        margin-top: 72px !important;
+        margin-bottom: 72px !important;
+
+    }
+
+}
