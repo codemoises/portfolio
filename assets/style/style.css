@@ -39,6 +39,7 @@ body {
     font-size: 2rem;
     color: var(--white);
     line-height: 1.5;
+    background-color: var(--primary-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -70,7 +71,6 @@ a {
 }
 
 .main-bg {
-    background-color: var(--primary-color);
     color: var(--white);
 }
 
@@ -80,10 +80,6 @@ a {
 }
 
 .menu {
-    /*background: var(--secondary-color);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    border-bottom: 1px solid rgba(114, 114, 126, 0.2);*/
     background: -webkit-gradient(linear, left top, left bottom, from(#050607), to(rgba(5, 6, 7, 0))), -webkit-gradient(linear, left top, left bottom, from(#050607), to(rgba(5, 6, 7, 0))), -webkit-gradient(linear, left top, left bottom, from(#050607), to(rgba(5, 6, 7, 0)));
     background: linear-gradient(180deg, #050607 0%, rgba(5, 6, 7, 0) 100%), linear-gradient(180deg, #050607 0%, rgba(5, 6, 7, 0) 100%), linear-gradient(180deg, #050607 0%, rgba(5, 6, 7, 0) 100%);
     position: fixed;
@@ -92,6 +88,17 @@ a {
     right: 0;
     width: 100%;
     z-index: 1;
+}
+
+.my-1 {
+    margin-top: 72px !important;
+    margin-bottom: 72px !important;
+}
+.grid-1 {
+    width: calc(58.33333% - 8px);
+    margin: 4px;
+    padding: 16px 0px;
+    /* float: left; */
 }
 
 .menu-content {
@@ -107,10 +114,6 @@ a {
     height: 80px;
     color: var(--secondary-white);
     
-}
-
-.menu h1 a {
-    color: inherit;
 }
 
 .menu ul {
@@ -139,20 +142,32 @@ a {
     height: 65px;
 }
 
-.inicio .inicio-text-content .p-2 {
+.inicio {
+    max-width: 1440px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 96px 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.inicio .grid-1 .p-2 {
     padding-top: 2.5rem;
 }
 
-.inicio-content {
-    position: relative;
-    /*top: -8rem;*/
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--gap);
-    min-height: 100vh;
-}
-
-.inicio .home-content .text-1, .text-3, .text-4, .text-5 {
+.inicio .grid-1 .text-1, .text-3, .text-4, .text-5 {
     font-family: 'Saira', sans-serif;
     color: var(--secondary-white);
     font-size: 2rem;
@@ -160,46 +175,46 @@ a {
     text-transform: uppercase;
 }
 
-.inicio .home-content .text-1 {
+.inicio .grid-1 .text-1 {
     transition: all 0.5s ease;
 }
 
-.inicio .home-content .text-1:hover {
+.inicio .grid-1 .text-1:hover {
     transform: translate(1rem, 0);
 }
 
-.inicio .home-content .text-3 {
+.inicio .grid-1 .text-3 {
     transition: all 0.5s ease;
 }
 
-.inicio .home-content .text-3:hover {
+.inicio .grid-1 .text-3:hover {
     transform: translate(1rem, 0);
 }
 
-.inicio .home-content .text-4 {
+.inicio .grid-1 .text-4 {
     transition: all 0.5s ease;
 }
 
-.inicio .home-content .text-4:hover {
+.inicio .grid-1 .text-4:hover {
     transform: translate(1rem, 0);
 }
 
-.inicio .home-content .text-5 {
+.inicio .grid-2 .text-5 {
     transition: all 0.5s ease;
 }
 
-.inicio .home-content .text-5:hover {
+.inicio .grid-2 .text-5:hover {
     transform: translate(1rem, 0);
 }
 
-.inicio .home-content .text-2 {
+.inicio .grid-1 .text-2 {
     font-family: 'Saira', sans-serif;
     font-size: 112px;
     line-height: 120%;
     font-weight: 400;
 }
 
-.inicio .home-content .text-3 {
+.inicio .grid-1 .text-3 {
     font-family: 'Saira', sans-serif;
     text-transform: uppercase;
     font-size: 2.3rem;
@@ -207,19 +222,19 @@ a {
     padding-top: 1.2rem;
 }
 
-.inicio .home-content .text-4 {
+.inicio .grid-1 .text-4 {
     margin-top: 2.0rem;
 }
 
-.inicio .home-content .text-5 {
+.inicio .grid-2 .text-5 {
     padding-bottom: 0.8rem;
 }
 
-.inicio .home-content .text-6 {
+.inicio .grid-2 .text-6 {
     font-size: 2.4rem;
 }
 
-.inicio .home-content .text-7 {
+.inicio .grid-2 .text-7 {
     font-family: 'Saira', sans-serif;
     font-size: 16px;
     line-height: 140%;
@@ -230,6 +245,7 @@ a {
 .inicio .check-in {
     display: flex;
     align-items: center;
+    padding-top: 1rem;
 }
 
 .inicio .check-in img {
@@ -245,24 +261,12 @@ a {
     padding-left: 2rem;
 }
 
-.inicio-text-content, .grid-2 {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    margin-top: 8px;
-}
-
-.grid-2 {
-    max-width: 100%;
-    height: 21rem;
-}
-
-.inicio .social .icon-social {
+.social .icon-social {
     max-width: 3.6rem;
     transition: all 0.5s ease;
 }
 
-.inicio .social .icon-social:hover {
+.social .icon-social:hover {
     transform: translate(0, -1rem);
 }
 
@@ -281,10 +285,10 @@ a {
 .social {
     position: absolute;
     bottom: 12rem;
-    left: 6.4rem;
+    left: 7.4rem;
 }
 
-@media (max-width: 800px) {
+/*@media (max-width: 800px) {
     .inicio-content, .grid {
         grid-template-columns: 1fr;
     }
@@ -340,4 +344,4 @@ a {
 
     }
 
-}
+}*/
