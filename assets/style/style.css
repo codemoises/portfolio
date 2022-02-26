@@ -209,7 +209,7 @@ a {
 
 .inicio .grid-1 .text-2 {
     font-family: 'Saira', sans-serif;
-    font-size: 112px;
+    font-size: 10rem;
     line-height: 120%;
     font-weight: 400;
 }
@@ -264,6 +264,7 @@ a {
 .social .icon-social {
     max-width: 3.6rem;
     transition: all 0.5s ease;
+    max-width: 2rem;
 }
 
 .social .icon-social:hover {
@@ -300,18 +301,11 @@ a {
         float: none;
     }
 
-    .social {
-        left: 16px;
-    }
-
     .inicio .grid-1 {
         width: calc(100% - 8px);
         float: none;
-    }
-
-    .main-content {
-        height: auto;
-        padding: 144px 8px 32px 8px;
+        padding: 1.6rem 0;
+        margin: 0.4rem;
     }
 
     .menu ul {
@@ -326,7 +320,7 @@ a {
         flex-direction: column;
     }
 
-    .inicio .home-content .text-1, .text-3, .text-4, .text-5 {
+    .inicio .grid-1 .text-1, .text-3, .text-4 {
         font-family: 'Saira', sans-serif;
         color: var(--secondary-white);
         font-size: 1.4rem;
@@ -334,14 +328,14 @@ a {
         text-transform: uppercase;
     }
 
-    .inicio .home-content .text-2 {
+    .inicio .grid-1 .text-2 {
         font-family: 'Saira', sans-serif;
         font-size: 46px;
         line-height: 120%;
         font-weight: 400;
     }
 
-    .inicio .home-content .text-3 {
+    .inicio .grid-1 .text-3 {
         font-family: 'Saira', sans-serif;
         text-transform: uppercase;
         font-size: 1.8rem;
@@ -349,15 +343,42 @@ a {
         padding-top: 1.2rem;
     }
 
-    .inicio .home-content .text-4 {
-        margin-top: 2.0rem;
+    .inicio .grid-1 .text-4 {
+        margin-top: 1rem;
+        padding-left: 2.4rem;
+        font-size: 1.8rem;
+    }
+
+    .inicio .grid-2 .text-5 {
+        font-family: 'Saira', sans-serif;
+        color: var(--secondary-white);
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .inicio .grid-2 .text-6 {
+        font-size: 2rem;
     }
 
 
-    .inicio .inicio-text-content {
+    .inicio .grid-1, .grid-2 {
         margin-top: 72px !important;
-        margin-bottom: 72px !important;
 
+    }
+
+    .social {
+        bottom: 15rem;
+        left: 1.6rem;
+    }
+
+    .social .icon-social {
+        max-width: 1.8rem;
+    }
+
+    .inicio .check-in {
+        padding-top: 2rem;
+        padding-left: 3.2rem;
     }
 
 }
