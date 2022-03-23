@@ -255,7 +255,7 @@ a {
     transform: translate(1rem, 0);
 }
 
-.inicio .text-2 {
+.text-2 {
     font-family: 'Saira', sans-serif;
     color: var(--white);
     font-size: 10rem;
@@ -263,7 +263,7 @@ a {
     font-weight: 400;
 }
 
-.inicio .text-3 {
+.text-3 {
     font-family: 'Open Sans', sans-serif;
     color: var(--white);
     font-size: 2rem;
@@ -271,7 +271,7 @@ a {
     padding-top: 0.5rem;
 }
 
-.inicio .grid-2 .text-4 {
+.text-4 {
     font-family: 'Saira', sans-serif;
     font-size: 16px;
     line-height: 140%;
@@ -508,30 +508,38 @@ a {
 
     .text-3 {
         font-family: 'Open Sans', sans-serif;
-        text-transform: uppercase;
-        font-size: 1.6rem;
+        font-size: 2rem;
         padding-left: 5rem;
         padding-top: 1.2rem;
     }
 
-    .inicio .grid-1 .text-4 {
-        margin-top: 1rem;
-        padding-left: 2.4rem;
-        font-size: 1.8rem;
-    }
 
-    .inicio .grid-2 .text-5 {
+    .text-5 {
         font-family: 'Saira', sans-serif;
-        color: var(--secondary-white);
-        font-size: 1.4rem;
-        letter-spacing: 1px;
-        text-transform: uppercase;
+        color: var(--white);
+        font-size: 4.6rem;
+        line-height: 120%;
+        font-weight: 400;
     }
 
-    .inicio .grid-2 .text-6 {
-        font-size: 2rem;
+    .text-6 {
+        font-family: 'Mukta', sans-serif;
+        font-size: 1.8rem;
+        line-height: 130%;
+        font-weight: 200;
     }
 
+    .list .item-list {
+        font-family: 'Mukta', sans-serif;
+        font-size: 1.8rem;
+        line-height: 130%;
+        font-weight: 200;
+        padding-left: 3.2rem;
+    }
+
+    .list .item-list::after {
+        left: 0.8rem;
+    }
 
     .inicio .grid-1, .grid-2 {
         margin-top: 72px !important;
@@ -539,7 +547,7 @@ a {
     }
 
     .social {
-        bottom: 15rem;
+        bottom: -1.6rem;
         left: 1.6rem;
     }
 
