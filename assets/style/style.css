@@ -464,7 +464,7 @@ a {
     .section {
         flex-direction: column;
         height: auto;
-        padding: 155px 8px 32px 8px;
+        padding: 132px 8px 32px 8px;
     }
 
     .grid-2 {
@@ -542,13 +542,17 @@ a {
     }
 
     .inicio .grid-1, .grid-2 {
-        margin-top: 72px !important;
+        margin-top: 60px !important;
 
     }
 
     .social {
-        bottom: -1.6rem;
+        bottom: 12rem;
         left: 1.6rem;
+    }
+
+    .social {
+        position: absolute;
     }
 
     .social .icon-social {
