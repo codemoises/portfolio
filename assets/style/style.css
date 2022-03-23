@@ -179,6 +179,11 @@ a {
 }
 
 /*PADDING TOP*/
+
+.p-1 {
+    padding-top: 0.8rem;
+}
+
 .p-2 {
     padding-top: 2.5rem;
 }
@@ -199,6 +204,27 @@ a {
 
 .mt-3 {
     margin-top: 2.4rem !important;
+}
+
+.px-1 {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
+.photo {
+    width: 100%;
+    border-radius: 1rem;
+    -webkit-transition: 1s ease;
+    transition: 1s ease;
+}
+
+.grid-photos svg {
+    width: 100%;
+}
+
+.grid-photo-2 {
+    -webkit-animation: grid-photo-2 20s ease infinite alternate;
+    animation: grid-photo-2 20s ease infinite alternate;
 }
 
 .text-1 {
@@ -326,6 +352,40 @@ a {
     content: '';
     display: table;
     clear: both;
+}
+
+.relative {
+    position: relative;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+
+.row::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.grid-photo-1 {
+    -webkit-animation: grid-photo-1 10s ease infinite alternate;
+    animation: grid-photo-1 10s ease infinite alternate;
+}
+
+.grid-nobreak-6 {
+    width: calc(50% - 8px);
+    margin: 4px;
+    padding: 16px 0px;
+    float: left;
+}
+
+.grid-nobreak-6 {
+    width: calc(50% - 8px);
+    margin: 4px;
+    padding: 16px 0px;
+    float: left;
 }
 
 @media (max-width: 1200px) {
