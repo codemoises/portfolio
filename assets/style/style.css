@@ -547,13 +547,15 @@ a {
     }
 
     .social {
+        position: absolute;
+    }
+    
+    .social {
         bottom: 12rem;
         left: 1.6rem;
     }
 
-    .social {
-        position: absolute;
-    }
+    
 
     .social .icon-social {
         max-width: 1.8rem;
