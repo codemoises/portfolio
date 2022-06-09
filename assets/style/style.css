@@ -639,10 +639,14 @@ a {
     }
 
     .grid {
-        width: 495px;
+        width: auto;
     }
 
     .v-p {
         width: auto;
+    }
+
+    .container {
+        padding: 0;
     }
 }
