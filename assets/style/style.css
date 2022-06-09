@@ -622,3 +622,19 @@ a {
     }
 
 }
+
+@media (max-width: 664px) {
+    .servicos {
+        width: 100%;
+        margin: 0;
+    }
+
+    .container .img {
+        max-width: 320px;
+        max-height: 199px;
+    }
+    .img-flex {
+        display: flex;
+        justify-content: center;
+    }
+}
