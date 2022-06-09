@@ -637,4 +637,12 @@ a {
         display: flex;
         justify-content: center;
     }
+
+    .grid {
+        width: 495px;
+    }
+
+    .v-p {
+        width: auto;
+    }
 }
