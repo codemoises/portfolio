@@ -104,6 +104,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0.6rem 4rem 0 4rem;
     padding-top: 0.6rem;
     padding-bottom: 0;
 }
@@ -541,6 +542,7 @@ a {
         font-size: 1.4rem;
         letter-spacing: 1px;
         text-transform: uppercase;
+        padding-left: 2rem;
     }
 
     .text-2 {
@@ -548,6 +550,8 @@ a {
         font-size: 4.6rem;
         line-height: 120%;
         font-weight: 400;
+        padding-left: 5rem;
+        padding-top: 1.5rem;
     }
 
     .text-3 {
